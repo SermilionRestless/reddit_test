@@ -13,7 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        final EditText emailView = findViewById(R.id.email);
+        final EditText emailView = findViewById(R.id.password );
         Button loginButton = findViewById(R.id.loginButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -22,5 +22,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, emailView.getText(), Toast.LENGTH_LONG).show();
             }
         });
+
     }
 }
